@@ -1,0 +1,16 @@
+body {
+   
+    background: linear-gradient(45deg, #0000cc, #8080ff, #0000cc, #8080ff);
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+}
+#survey-form {
+    background-color: #0c0c7c75;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+    font-size: 25px;
+    padding: 50px 50px ;
+    
+}

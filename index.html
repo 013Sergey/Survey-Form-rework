@@ -6,14 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Перед формы от freeCodeCamp</p>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">Перевод формы FreeCodeCamp</p>
     <form id="survey-form">
-        <label for="name">Имя</label><br>
-        <input type="text" id="name" name="Имя"
+        <label for="name" id="name-label">Имя</label><br>
+        <input type="text" placeholder="Введите свое имя" id="name" required>
+        <br>
+        <label for="email" id="email-label">Почта</label><br>
+        <input type="email" placeholder="Введите вашу почту" id="email" required>
+        <br>
+        <label for="number" id="number-label">Возраст(не обязательно)</label><br>
+        <input type="number" placeholder="Возраст" id="number" min="5" max="130">
+        <br>
+        <label for="dropdown">Какой вариант лучше всего описывает вашу текущую роль?</label><br>
+        <select id="dropdown" required>
+            <option disabled selected>Выберите вашу роль</option>
+            <option>Студент</option>
+            <option>Все время работаете</option>
+            <option>Все время изучаете</option>
+            <option>Предпочитаю не говорить</option>
+            <option>Иное</option>
+        </select>
+        <br>
+        <p>Вы бы порекомендовали freeCodeCamp своему другу?</p>
+        <input id="1radio" type="radio" name="1radio-2radio-3radio" value="1radio" checked>
+        <label for="1radio">Конечно</label><br>
+        <input id="2radio" type="radio" name="1radio-2radio-3radio" value="2radio">
+        <label for="2radio">Возможно</label><br>
+        <input id="3radio" type="radio" name="1radio-2radio-3radio" value="3radio">
+        <label for="3radio">Нет конечно</label>
+        <br>
+        <label for="dropdown2">Какая ваша любимая функция freeCodeCamp?</label><br>
+        <select id="dropdown2" required>
+            <option disabled selected>Выберите один из вариантов</option>
+            <option>Challenge(Вызовы)</option>
+            <option>Projects(Проэкты)</option>
+            <option>Community(Сообщество)</option>
+            <option>Open source(Открытый исходный код)</option>
+        </select>
+        <br>
+        <p>Чтобы вы хотели улучшить?(выберите все что подходит)</p>
+        <input id="checkbox1" type="checkbox" value="checkbox1">
+        <label for="checkbox1">Front-end Projects(Фронтальные проэкты)</label><br>
+        <input id="checkbox2" type="checkbox" value="checkbox2">
+        <label for="checkbox2">Back-end Projects(Сервирные проэкты)</label><br>
+        <input id="checkbox3" type="checkbox" value="checkbox3">
+        <label for="checkbox3">Data Visualization(Визуализация данных)</label><br>
+        <input id="checkbox4" type="checkbox" value="checkbox4">
+        <label for="checkbox4">Challenges(Вызовы)</label><br>
+        <input id="checkbox5" type="checkbox" value="checkbox5">
+        <label for="checkbox5">Open Source Community(Открытое сообщество)</label><br>
+        <input id="checkbox6" type="checkbox" value="checkbox6">
+        <label for="checkbox6">Gitter help rooms(Сервис обмена сообщениями)</label><br>
+        <input id="checkbox7" type="checkbox" value="checkbox7">
+        <label for="checkbox7">Videos(Видео)</label><br>
+        <input id="checkbox8" type="checkbox" value="checkbox8">
+        <label for="checkbox8">City Meetups(Городские встречи)</label><br>
+        <input id="checkbox9" type="checkbox" value="checkbox9">
+        <label for="checkbox9">Wiki(Вики)</label><br>
+        <input id="checkbox10" type="checkbox" value="checkbox10">
+        <label for="checkbox10">Forum(Форум)</label><br>
+        <input id="checkbox11" type="checkbox" value="checkbox11">
+        <label for="checkbox11">Additional Courses(Дополнительные курсы)</label>
+        <br>
+        <p>Есть какие-нибудь замечания или предложения?</p>
+        <textarea placeholder="Напишите свой комментарий сюда..."></textarea>
+        <br>
+        <button id="submit" type="submit">Отправить</button>
     </form>
 
     <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
